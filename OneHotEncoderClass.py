@@ -36,5 +36,3 @@ class MyOneHotEncoder(BaseEstimator, TransformerMixin):
             features = features.drop(columns=self.cat_cols)
 
         return features, target
-
-print("MyOneHotEncoder class has been defined successfully.")

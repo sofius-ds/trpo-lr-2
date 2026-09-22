@@ -19,3 +19,5 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
             data = data.drop(columns="timestamp")
 
         return data
+
+print("FeatureExtractor class has been defined successfully.")

@@ -1,0 +1,24 @@
+diff --git a/FeatureExtractorClass.py b/FeatureExtractorClass.py
+index 18c9d22..076e25b 100644
+--- a/FeatureExtractorClass.py
++++ b/FeatureExtractorClass.py
+@@ -18,6 +18,4 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
+             data["dayofweek"] = data["timestamp"].dt.weekday
+             data = data.drop(columns="timestamp")
+ 
+-        return data
+-
+-    print("FeatureExtractor initialized and ready to transform data.")
+\ No newline at end of file
++        return data
+\ No newline at end of file
+diff --git a/info.md b/info.md
+index 176d88e..1e365ef 100644
+--- a/info.md
++++ b/info.md
+@@ -1,3 +1,5 @@
+ ## О репозитории
+ 
+ Этот репозиторий предназначен для хранения исходного кода, документации и сопутствующих материалов проекта. Здесь собраны файлы, необходимые для разработки, настройки и дальнейшего сопровождения проекта.
++
++В дальнейшем эти файлы можно применять в проектах машинного обучения

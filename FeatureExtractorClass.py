@@ -16,7 +16,6 @@ class FeatureExtractor(BaseEstimator, TransformerMixin):
             data["timestamp"] = pd.to_datetime(data["timestamp"])
             data["hour"] = data["timestamp"].dt.hour
             data["dayofweek"] = data["timestamp"].dt.weekday
-            data["is_weekend"] = data["dayofweek"] >= 5
             data = data.drop(columns="timestamp")
 
         return data
